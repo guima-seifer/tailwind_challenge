@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "bold idea html and tailwindcss challenge",
+  "main": "index.js",
+  "scripts": {
+    "build:tailwind": "tailwind build src/input.css -o public/output.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
