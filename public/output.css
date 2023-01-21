@@ -989,6 +989,10 @@ video {
   transform: rotate(180deg);
 }
 
+p {
+  font-size: 18px;;
+}
+
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1069,8 +1073,8 @@ video {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:top-32 {
-    top: 8rem;
+  .\32xl\:top-40 {
+    top: 10rem;
   }
 
   .\32xl\:-bottom-28 {
@@ -1140,6 +1144,10 @@ video {
 
   .\32xl\:flex-row {
     flex-direction: row;
+  }
+
+  .\32xl\:flex-col {
+    flex-direction: column;
   }
 
   .\32xl\:items-start {
