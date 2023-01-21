@@ -10,9 +10,21 @@
 }
 
 .btn-blue {
-    @apply bg-primaryBlue text-white
+    @apply bg-primaryBlue border-primaryBlue text-white
 }
 
 .btn-darkblue {
-    @apply bg-neutralGrayishBlue text-neutralVeryDarkBlue
+    @apply bg-neutralVeryDarkBlue border-neutralVeryDarkBlue text-white
+}
+
+.btn-hoverDarkBlue {
+    @apply bg-white border-neutralVeryDarkBlue text-neutralVeryDarkBlue
+}
+
+.btn-hoverBlue {
+    @apply hover:bg-white border-2 hover:text-primaryBlue hover:border-primaryBlue
+}
+
+.btn-redhover {
+    @apply hover:bg-white border-2 hover:text-primaryRed hover:border-primaryRed
 }

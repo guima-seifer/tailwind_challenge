@@ -12,7 +12,7 @@
     />
     <title>Interview Challenge</title>
   </head>
-  <body class="font-Rubik">
+  <body class="font-Rubik" style="max-width: 100vw">
     <!--Header-->
     <header>
       <nav class="container flex items-center py-4 mt-4 sm:mt-12">
@@ -22,12 +22,12 @@
         <ul
           class="hidden sm:flex flex-1 justify-end items-center gap-12 text-primaryBlue uppercase text-xs"
         >
-          <li class="cursor-pointer text-neutralVeryDarkBlue">Features</li>
-          <li class="cursor-pointer text-neutralVeryDarkBlue">Pricing</li>
-          <li class="cursor-pointer text-neutralVeryDarkBlue">Contact</li>
+          <li class="cursor-pointer text-neutralVeryDarkBlue hover:text-primaryRed">Features</li>
+          <li class="cursor-pointer text-neutralVeryDarkBlue hover:text-primaryRed">Pricing</li>
+          <li class="cursor-pointer text-neutralVeryDarkBlue hover:text-primaryRed">Contact</li>
           <button
             type="button"
-            class="bg-primaryRed uppercase text-white rounded-md px-7 py-3 shadow-md"
+            class="bg-primaryRed uppercase text-white rounded-md px-7 py-3 shadow-md btn-redhover"
           >
             Login
           </button>
@@ -58,7 +58,7 @@
           <div class="flex justy-center flex-wrap gap-6">
             <button
               type="button"
-              class="btn btn-blue hover:bg-neutralGrayishBlue"
+              class="btn btn-blue btn-hoverBlue"
             >
               Get in on Chrome
             </button>
@@ -105,7 +105,7 @@
           <li class="flex flex-1/3">
             <a
               href="#"
-              class="w-52 inline-block p-4 border-b-2 border-spacing-64 hover:text-gray-600 hover:border-gray-300"
+              class="w-52 inline-block p-4 border-b-2 border-spacing-64 hover:border-gray-300 hover:text-primaryRed"
               >Profile</a
             >
           </li>
@@ -120,7 +120,7 @@
           <li class="flex flex-1/3">
             <a
               href="#"
-              class="w-52 inline-block p-4 border-b-2 hover:text-gray-600 hover:border-gray-300"
+              class="w-52 inline-block p-4 border-b-2 hover:text-primaryRed hover:border-gray-300"
               >Settings</a
             >
           </li>
@@ -153,10 +153,7 @@
               Gravida arcu ac tortor dignissim convallis aenean et tortor at.
               Elit eget gravida cum sociis natoque penatibus et magnis dis.
             </p>
-            <button
-              type="button"
-              class="btn btn-blue hover:bg-neutralGrayishBlue"
-            >
+            <button type="button" class="btn btn-blue btn-hoverBlue">
               More Info
             </button>
           </div>
@@ -198,12 +195,9 @@
               Minimum version 62
             </p>
           </div>
-          <hr class="border-b border-gray-100" />
+          <img src="/public/images/bg-dots.svg" alt="" srcset="" />
           <div class="flex p-6">
-            <button
-              type="button"
-              class="btn btn-blue flex-1 hover:bg-neutralGrayishBlue"
-            >
+            <button type="button" class="btn btn-blue flex-1 btn-hoverBlue">
               Add & Install Extendion
             </button>
           </div>
@@ -224,12 +218,9 @@
               Minimum version 55
             </p>
           </div>
-          <hr class="border-b border-gray-100" />
+          <img src="/public/images/bg-dots.svg" alt="" srcset="" />
           <div class="flex p-6">
-            <button
-              type="button"
-              class="btn btn-blue flex-1 hover:bg-neutralGrayishBlue"
-            >
+            <button type="button" class="btn btn-blue flex-1 btn-hoverBlue">
               Add & Install Extendion
             </button>
           </div>
@@ -250,12 +241,9 @@
               Minimum version 46
             </p>
           </div>
-          <hr class="border-b border-gray-100" />
+          <img src="/public/images/bg-dots.svg" alt="" srcset="" />
           <div class="flex p-6">
-            <button
-              type="button"
-              class="btn btn-blue flex-1 hover:bg-neutralGrayishBlue"
-            >
+            <button type="button" class="btn btn-blue flex-1 btn-hoverBlue">
               Add & Install Extendion
             </button>
           </div>
@@ -264,7 +252,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="bg-gray-100 py-20">
+    <section class="py-20">
       <div class="container">
         <!-- Heading -->
         <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
@@ -282,10 +270,21 @@
             <span class="flex-1">What is a Bookmark?</span>
             <img src="images/icon-arrow.svg" alt="" srcset="" />
           </div>
-          <div class="flex items-center border-b py-4">
-            <span class="flex-1">How can I request a new browser?</span>
-            <img src="images/icon-arrow.svg" alt="" srcset="" />
+          <div class="border-b py-4">
+            <div class="flex flex-row items-center ">
+              <span class="flex-1">How can I request a new browser?</span>
+              <img src="images/icon-arrow.svg" alt="" srcset="" />
+            </div>
+
+            <div class="flex flex-row flex-1 mt-12">
+              <p class="text-neutralGrayishBlue font-light">Feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam.
+                Nulla pharetra diam sit amet nisl suscipit.Feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam.
+                Nulla pharetra diam sit amet nisl suscipit.</p>
+            </div>
           </div>
+
+
+
           <div class="flex items-center border-b py-4">
             <span class="flex-1">Is there a mobile app?</span>
             <img src="images/icon-arrow.svg" alt="" srcset="" />
@@ -296,7 +295,7 @@
           </div>
           <button
             type="button"
-            class="flex self-center mt-12 btn btn-blue hover:bg-neutralGrayishBlue"
+            class="flex self-center mt-12 btn btn-blue btn-hoverBlue"
           >
             More info
           </button>
@@ -322,7 +321,7 @@
             />
             <button
               type="button"
-              class="btn bg-primaryRed hover:bg-neutralGrayishBlue"
+              class="btn border-primaryRed bg-primaryRed btn-redhover"
             >
               Get in on Chrome
             </button>
@@ -343,17 +342,25 @@
             srcset=""
           />
           <ul class="flex text-white uppercase gap-12 text-sm">
-            <li class="cursor-pointer">Features</li>
-            <li class="cursor-pointer">Pricing</li>
-            <li class="cursor-pointer">Contact</li>
+            <li class="cursor-pointer hover:text-primaryRed">Features</li>
+            <li class="cursor-pointer hover:text-primaryRed">Pricing</li>
+            <li class="cursor-pointer hover:text-primaryRed">Contact</li>
           </ul>
         </div>
-        <div class="flex gap-10 mt-12 md:mt-8">
-          <ul class="flex flex-row gap-10">
-            <li><img src="/public/images/icon-twitter.svg" alt="" /></li>
-            <li><img src="/public/images/icon-facebook.svg" alt="" /></li>
-          </ul>
-        </div>
+        <ul class="flex flex-row gap-10">
+          <li class="cursor-pointer">
+            <img
+              src="/public/images/icon-twitter.svg"
+              alt=""
+            />
+          </li>
+          <li class="cursor-pointer">
+            <img
+              src="/public/images/icon-facebook.svg"
+              alt=""
+            />
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
