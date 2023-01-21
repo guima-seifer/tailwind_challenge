@@ -22,9 +22,21 @@
         <ul
           class="hidden sm:flex flex-1 justify-end items-center gap-12 text-primaryBlue uppercase text-xs"
         >
-          <li class="cursor-pointer text-neutralVeryDarkBlue hover:text-primaryRed">Features</li>
-          <li class="cursor-pointer text-neutralVeryDarkBlue hover:text-primaryRed">Pricing</li>
-          <li class="cursor-pointer text-neutralVeryDarkBlue hover:text-primaryRed">Contact</li>
+          <li
+            class="cursor-pointer text-neutralVeryDarkBlue hover:text-primaryRed"
+          >
+            Features
+          </li>
+          <li
+            class="cursor-pointer text-neutralVeryDarkBlue hover:text-primaryRed"
+          >
+            Pricing
+          </li>
+          <li
+            class="cursor-pointer text-neutralVeryDarkBlue hover:text-primaryRed"
+          >
+            Contact
+          </li>
           <button
             type="button"
             class="bg-primaryRed uppercase text-white rounded-md px-7 py-3 shadow-md btn-redhover"
@@ -56,15 +68,12 @@
             aliquam malesuada bibendum arcu vitae.
           </p>
           <div class="flex justy-center flex-wrap gap-6">
-            <button
-              type="button"
-              class="btn btn-blue btn-hoverBlue"
-            >
+            <button type="button" class="btn btn-blue btn-hoverBlue">
               Get in on Chrome
             </button>
             <button
               type="button"
-              class="btn btn-darkblue hover:bg-neutralVeryDarkBlue hover:text-white"
+              class="btn btn-darkblue hover:bg-white hover:text-neutralVeryDarkBlue border-2"
             >
               Get it on Firefox
             </button>
@@ -198,7 +207,7 @@
           <img src="/public/images/bg-dots.svg" alt="" srcset="" />
           <div class="flex p-6">
             <button type="button" class="btn btn-blue flex-1 btn-hoverBlue">
-              Add & Install Extendion
+              Add & Install Extension
             </button>
           </div>
         </div>
@@ -221,7 +230,7 @@
           <img src="/public/images/bg-dots.svg" alt="" srcset="" />
           <div class="flex p-6">
             <button type="button" class="btn btn-blue flex-1 btn-hoverBlue">
-              Add & Install Extendion
+              Add & Install Extension
             </button>
           </div>
         </div>
@@ -244,7 +253,7 @@
           <img src="/public/images/bg-dots.svg" alt="" srcset="" />
           <div class="flex p-6">
             <button type="button" class="btn btn-blue flex-1 btn-hoverBlue">
-              Add & Install Extendion
+              Add & Install Extension
             </button>
           </div>
         </div>
@@ -267,30 +276,39 @@
         <!-- FAQ Items -->
         <div class="flex flex-col sm:w-3/4 md:w-5/12 mt-12 mx-auto">
           <div class="flex items-center border-b py-4">
-            <span class="flex-1">What is a Bookmark?</span>
+            <span class="flex-1 hover:text-primaryRed"
+              >What is a Bookmark?</span
+            >
             <img src="images/icon-arrow.svg" alt="" srcset="" />
           </div>
           <div class="border-b py-4">
-            <div class="flex flex-row items-center ">
-              <span class="flex-1">How can I request a new browser?</span>
-              <img src="images/icon-arrow.svg" alt="" srcset="" />
+            <div class="flex flex-row items-center">
+              <span class="flex-1 hover:text-primaryRed"
+                >How can I request a new browser?</span
+              >
+              <img src="images/icon-arrow.svg" class="rotate180 svg-red" alt="" srcset="" />
             </div>
 
             <div class="flex flex-row flex-1 mt-12">
-              <p class="text-neutralGrayishBlue font-light">Feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam.
-                Nulla pharetra diam sit amet nisl suscipit.Feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam.
-                Nulla pharetra diam sit amet nisl suscipit.</p>
+              <p class="text-neutralGrayishBlue font-light">
+                Feugiat pretium nibh ipsum consequat nisl vel pretium lectus
+                quam. Nulla pharetra diam sit amet nisl suscipit.Feugiat pretium
+                nibh ipsum consequat nisl vel pretium lectus quam. Nulla
+                pharetra diam sit amet nisl suscipit.
+              </p>
             </div>
           </div>
 
-
-
           <div class="flex items-center border-b py-4">
-            <span class="flex-1">Is there a mobile app?</span>
+            <span class="flex-1 hover:text-primaryRed"
+              >Is there a mobile app?</span
+            >
             <img src="images/icon-arrow.svg" alt="" srcset="" />
           </div>
           <div class="flex items-center border-b py-4">
-            <span class="flex-1">What about other Chromium browsers?</span>
+            <span class="flex-1 hover:text-primaryRed"
+              >What about other Chromium browsers?</span
+            >
             <img src="images/icon-arrow.svg" alt="" srcset="" />
           </div>
           <button
@@ -350,12 +368,14 @@
         <ul class="flex flex-row gap-10">
           <li class="cursor-pointer">
             <img
+              class="colorize-red"
               src="/public/images/icon-twitter.svg"
               alt=""
             />
           </li>
           <li class="cursor-pointer">
             <img
+              class="colorize-red"
               src="/public/images/icon-facebook.svg"
               alt=""
             />

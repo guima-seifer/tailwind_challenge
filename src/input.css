@@ -1,30 +1,51 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
-
+@tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
 .btn {
-    @apply shadow-md py-3 px-6 rounded-md transition duration-300
+  @apply shadow-md py-3 px-6 rounded-md transition duration-300;
 }
 
 .btn-blue {
-    @apply bg-primaryBlue border-primaryBlue text-white
+  @apply bg-primaryBlue border-primaryBlue text-white;
 }
 
 .btn-darkblue {
-    @apply bg-neutralVeryDarkBlue border-neutralVeryDarkBlue text-white
+  @apply bg-neutralVeryDarkBlue border-neutralVeryDarkBlue text-white;
 }
 
 .btn-hoverDarkBlue {
-    @apply bg-white border-neutralVeryDarkBlue text-neutralVeryDarkBlue
+  @apply bg-white border-neutralVeryDarkBlue text-neutralVeryDarkBlue;
 }
 
 .btn-hoverBlue {
-    @apply hover:bg-white border-2 hover:text-primaryBlue hover:border-primaryBlue
+  @apply hover:bg-white border-2 hover:text-primaryBlue hover:border-primaryBlue;
 }
 
 .btn-redhover {
-    @apply hover:bg-white border-2 hover:text-primaryRed hover:border-primaryRed
+  @apply hover:bg-white border-2 hover:text-primaryRed hover:border-primaryRed;
+}
+
+.svg-red {
+  @apply color-red
+}
+
+.color-red {
+    filter: invert(62%) sepia(39%) saturate(4560%) hue-rotate(319deg)
+      brightness(101%) contrast(113%);
+  }
+
+.colorize-red:hover {
+  filter: invert(62%) sepia(39%) saturate(4560%) hue-rotate(319deg)
+    brightness(101%) contrast(113%);
+}
+
+.rotate180 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
