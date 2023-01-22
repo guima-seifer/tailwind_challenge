@@ -2,7 +2,12 @@
 module.exports = {
   content: ['public/*.{html,js}'],
   theme: {
-    
+    screens: {
+      'sm': '375px',
+      // => @media (min-width: 640px) { ... }
+      '2xl': '1440px',
+      // => @media (min-width: 1280px) { ... }
+    },
 
     extend: {
       colors: {
@@ -24,7 +29,7 @@ module.exports = {
       padding: '1rem',
       screens: {
         xs: '375px',
-        '2xl': '1440px',
+        xl: '1440px',
       },
     },
   },
